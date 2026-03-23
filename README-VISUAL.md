@@ -130,6 +130,8 @@ Lo que empecé buscando era un flujo de trabajo para mi día a día. En el proce
 
 ¿Es perfecto? No. ¿Es reproducible? Sí. ¿Me ha cambiado la forma de trabajar? Completamente.
 
+> La historia completa, el contexto del máster, por qué tomé este camino y qué aprendí en el proceso está en el [Manifiesto](MANIFIESTO.md).
+
 ---
 
 ## Entregables
