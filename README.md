@@ -16,6 +16,10 @@ Mi nombre es Adrián Cester. Soy *"Pseudo-Ingeniero de Software"* en la *España
 
 El resultado se parece a un Ferrari: corre casi tanto, gusta casi tanto, impacta casi tanto. Pero no le abras el capó, porque lo que encontrarás es un motor de seiscientos lleno de alambres y chicles al más puro estilo *"MacGyver"*.
 
+<p align="center">
+  <img src="assets/ferrari-seiscientos.png" alt="Ferrari por fuera, seiscientos por dentro" width="50%" />
+</p>
+
 Quizás es momento de cambiar ese rumbo. Pues ya sabéis qué hago aquí. MaDIA es el punto de inflexión.
 
 ---
@@ -42,40 +46,61 @@ Así que decidí buscar las mías. *My way.*
 
 Cuatro repositorios. Un flujo. Una metodología.
 
-```mermaid
-graph LR
-    A["seedspec<br/><em>Especificación trazable</em>"] --> B["doc-spec-pipeline<br/><em>Atomización para agentes</em>"]
-    B --> C["Associated<br/><em>Producto real</em>"]
-    D["docflow-skills<br/><em>Documentación automatizada</em>"] --> C
+<p align="center">
+  <img src="assets/diagrama-ecosistema.svg" alt="Diagrama del ecosistema de repositorios" width="45%" />
+</p>
 
-    C -->|"sesiones, cambios,<br/>releases"| D
-    B -->|"spec navegable<br/>por agentes"| C
-
-    style A fill:#5B7682,stroke:#3D5E6C,color:#fff
-    style B fill:#5B7682,stroke:#3D5E6C,color:#fff
-    style C fill:#27343E,stroke:#1A2329,color:#fff
-    style D fill:#5B7682,stroke:#3D5E6C,color:#fff
-```
+---
 
 ### 1. seedspec - Planta una propuesta, cosecha un sistema
+
+<p align="center">
+    <a href="https://github.com/matraket/seedspec">
+        <img src="assets/preview-seedspec.svg" alt="seedspec" width="60%" />
+    </a>
+</p>
 
 Metodología de expansión documental trazable: de la semilla del problema al MVP listo para implementar. Una propuesta inicial germina a través de 11 artefactos encadenados (requisitos funcionales, RNF, modelo de dominio, ADRs, stack, user stories, casos de uso) hasta convertirse en una especificación completa con trazabilidad de extremo a extremo.
 
 > **[github.com/matraket/seedspec](https://github.com/matraket/seedspec)**
 
+---
+
 ### 2. doc-spec-pipeline - Pipeline documental para agentes de IA
+
+<p align="center">
+    <a href="https://github.com/matraket/doc-spec-pipeline">
+        <img src="assets/preview-doc-spec-pipeline.svg" alt="doc-spec-pipeline" width="60%" />
+    </a>
+</p>
 
 32.600 líneas de especificación no caben en una ventana de contexto. Este repositorio resuelve ese problema: transforma especificaciones extensas en fragmentos atómicos y navegables mediante dos skills complementarios (`doc-spec-generator` + `doc-spec-manager`). Generación determinista, sin dependencia de LLM, idempotente.
 
 > **[github.com/matraket/doc-spec-pipeline](https://github.com/matraket/doc-spec-pipeline)**
 
+---
+
 ### 3. docflow-skills - Documentación automatizada del desarrollo
+
+<p align="center">
+    <a href="https://github.com/matraket/docflow-skills">
+        <img src="assets/preview-docflow-skills.svg" alt="docflow-skills" width="60%" />
+    </a>
+</a>
 
 Cadena de 3 skills que cierra el ciclo por el otro extremo: `session-manager` registra lo que ocurre en cada sesión de trabajo con IA, `changelog-updater` agrupa los cambios, y `release-generator` cierra versiones con trazabilidad completa. Porque si el agente no documenta lo que hace, nadie lo hará.
 
 > **[github.com/matraket/docflow-skills](https://github.com/matraket/docflow-skills)**
 
+---
+
 ### 4. Associated - El vehículo
+
+<p align="center">
+    <a href="https://github.com/appassociated-dev/tfm-associated">
+        <img src="assets/preview-associated.png" alt="Associated" width="65%" />
+    </a>
+</p>
 
 ERP ligero para asociaciones culturales, cofradías, clubes deportivos y peñas festeras españolas. Es el proyecto donde converge todo: especificado con seedspec, consumido por agentes a través de doc-spec-pipeline, y documentado automáticamente con docflow-skills. Monolito modular, DDD, Clean Architecture, 6 Bounded Contexts.
 
@@ -85,42 +110,17 @@ ERP ligero para asociaciones culturales, cofradías, clubes deportivos y peñas 
 
 ## En números
 
-| Dimensión | Cifra |
-|:----------|------:|
-| Repositorios | 4 |
-| Skills para agentes | 5 |
-| Artefactos de especificación | 11 |
-| Requisitos funcionales | 221 |
-| Requisitos no funcionales | 66 |
-| User Stories | 202 |
-| Casos de uso | 76 |
-| ADRs | 12 |
-| Bounded Contexts | 6 |
-| Líneas de especificación | ~32.600 |
-| Referencias cruzadas entre documentos | ~1.800 |
+<p align="center">
+  <img src="assets/infografia-numeros.svg" alt="El ecosistema en cifras" width="65%" />
+</p>
 
 ---
 
 ## El flujo completo
 
-```mermaid
-graph TD
-    S["Semilla<br/><em>Problema de negocio</em>"] --> SPEC["seedspec<br/><em>Expansión documental</em>"]
-    SPEC --> CORPUS["Corpus completo<br/><em>221 RF · 66 RNF · 202 US · 76 UC</em>"]
-    CORPUS --> PIPE["doc-spec-pipeline<br/><em>Atomización</em>"]
-    PIPE --> REFS["Referencias navegables<br/><em>Fragmentos atómicos + índices</em>"]
-    REFS --> DEV["Associated<br/><em>Desarrollo asistido</em>"]
-    DEV --> FLOW["docflow-skills<br/><em>Sesiones · Changelog · Releases</em>"]
-    FLOW -->|"trazabilidad"| DEV
-
-    style S fill:#8CA1AA,stroke:#7A939E,color:#fff
-    style SPEC fill:#5B7682,stroke:#3D5E6C,color:#fff
-    style CORPUS fill:#3D5E6C,stroke:#27343E,color:#fff
-    style PIPE fill:#5B7682,stroke:#3D5E6C,color:#fff
-    style REFS fill:#3D5E6C,stroke:#27343E,color:#fff
-    style DEV fill:#27343E,stroke:#1A2329,color:#fff
-    style FLOW fill:#5B7682,stroke:#3D5E6C,color:#fff
-```
+<p align="center">
+  <img src="assets/diagrama-flujo.svg" alt="Flujo completo del ecosistema" width="65%" />
+</p>
 
 ---
 
@@ -144,6 +144,19 @@ Lo que empecé buscando era un flujo de trabajo para mi día a día. En el proce
 
 ---
 
+## Transparencia
+
+*¡Al César lo que es del César!*
+
+Antes de que continúes y te sumerjas en nuestro ecosistema, quiero ser totalmente honesto contigo y con Sig School. Este trabajo lo he realizado en colaboración con una gran persona que el destino puso en mi camino hace ya un tiempo: [Pául Vidal](https://github.com/pvidaal07). Créeme si te digo que no ha sido por interés, egoísmo o necesidad; nada más lejos de la realidad. Este proyecto nació de una idea suya hace mucho tiempo y, juntos, fuimos dándole forma conceptual poco a poco. Este TFM nos presentó una gran oportunidad para continuar con ella y, honestamente, para mí no tenía ningún sentido materializarla si él no formaba parte desde el principio.
+
+Ambos hemos dado lo mejor de nosotros y, aunque, como es obvio, yo le he dedicado muchas más horas, todas y cada una de las decisiones tomadas han sido consensuadas entre los dos, por lo que el mérito, sea mucho o poco, también será de ambos.
+
+Desconozco si esto se podía hacer o no, aunque, sinceramente, tenía muy claro que este era mi proyecto y la forma de abordarlo, para mí, era innegociable. Por lo tanto, si se podía o no, es algo que ni me planteé. He sentido la necesidad de ser honesto conmigo, pero, sobre todo, con vosotros, pues soy de los que piensan que la mentira tiene las patas muy cortas y que la sinceridad, aunque poco valorada en los tiempos que corren, es lo que define gran parte de lo que uno es.
+
+
+---
+
 ## Agradecimientos
 
 Nada de esto habría pasado sin el claustro de MaDIA. Llegué al máster con 18 años de inercia profesional, convencido de que "lo que funciona no se toca". Me habéis obligado a cuestionarlo todo - y eso no tiene precio.
@@ -152,8 +165,15 @@ Gracias por el conocimiento, por la exigencia y por demostrar que se puede ense�
 
 A cada uno de vosotros, unas palabras:
 
-- [Carta a Fulanito](cartas/fulanito.md)
-- [Carta a Menganito](cartas/menganito.md)
+- [Carta a Brais](cartas/brais.md)
+- [Carta a Martí](cartas/marti.md)
+- [Carta a Carlos](cartas/carlos.md)
+- [Carta a Aris](cartas/aris.md)
+- [Carta a Alan](cartas/alan.md)
+- [Carta a Kiko](cartas/kiko.md)
+- [Carta a Nerea](cartas/nerea.md)
+- [Carta a Xavi](cartas/xavi.md)
+- [Carta a Daniela](cartas/daniela.md)
 
 ---
 
