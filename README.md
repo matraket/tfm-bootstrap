@@ -86,7 +86,7 @@ Metodología de expansión documental trazable: de la semilla del problema al MV
     <a href="https://github.com/matraket/docflow-skills">
         <img src="assets/preview-docflow-skills.svg" alt="docflow-skills" width="60%" />
     </a>
-</a>
+</p>
 
 Cadena de 3 skills que cierra el ciclo por el otro extremo: `session-manager` registra lo que ocurre en cada sesión de trabajo con IA, `changelog-updater` agrupa los cambios, y `release-generator` cierra versiones con trazabilidad completa. Porque si el agente no documenta lo que hace, nadie lo hará.
 
@@ -139,8 +139,8 @@ Lo que empecé buscando era un flujo de trabajo para mi día a día. En el proce
 | Recurso | Enlace |
 |:--------|:-------|
 | Código | [github.com/appassociated-dev/tfm-associated](https://github.com/appassociated-dev/tfm-associated) |
-| Despliegue | *Pendiente de enlace* |
-| Presentación | *Pendiente de enlace* |
+| Despliegue | [Aplicación associated](https://associated.ipgsoft.com) |
+| Presentación | [Overview](https://overview-associated.ipgsoft.com) |
 
 ---
 
@@ -148,7 +148,7 @@ Lo que empecé buscando era un flujo de trabajo para mi día a día. En el proce
 
 *¡Al César lo que es del César!*
 
-Antes de que continúes y te sumerjas en nuestro ecosistema, quiero ser totalmente honesto contigo y con Sig School. Este trabajo lo he realizado en colaboración con una gran persona que el destino puso en mi camino hace ya un tiempo: [Pául Vidal](https://github.com/pvidaal07). Créeme si te digo que no ha sido por interés, egoísmo o necesidad; nada más lejos de la realidad. Este proyecto nació de una idea suya hace mucho tiempo y, juntos, fuimos dándole forma conceptual poco a poco. Este TFM nos presentó una gran oportunidad para continuar con ella y, honestamente, para mí no tenía ningún sentido materializarla si él no formaba parte desde el principio.
+Antes de que continúes y te sumerjas en nuestro ecosistema, quiero ser totalmente honesto contigo y con Big School. Este trabajo lo he realizado en colaboración con una gran persona que el destino puso en mi camino hace ya un tiempo: [Pául Vidal](https://github.com/pvidaal07). Creedme si os digo que no ha sido por interés, egoísmo o necesidad; nada más lejos de la realidad. Este proyecto nació de una idea suya hace mucho tiempo y, juntos, fuimos dándole forma conceptual poco a poco. Este TFM nos presentó una gran oportunidad para continuar con ella y, honestamente, para mí no tenía ningún sentido materializarla si él no formaba parte desde el principio.
 
 Ambos hemos dado lo mejor de nosotros y, aunque, como es obvio, yo le he dedicado muchas más horas, todas y cada una de las decisiones tomadas han sido consensuadas entre los dos, por lo que el mérito, sea mucho o poco, también será de ambos.
 
