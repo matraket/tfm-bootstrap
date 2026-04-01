@@ -1,0 +1,13 @@
+# Carta a Xavi
+
+Don Xavi:
+
+A ti no te conocía antes del máster. Y cuando te busqué y vi tu GitHub, tu trayectoria y todo lo que llevas hecho, pensé: *pero si este tío es muy joven, ¿cómo es posible que tenga un background que parece de alguien viviendo su quinta vida?*. Madre mía lo que le cunde a la gente. ¡Qué talentazo!, de verdad que es envidiable.
+
+Impartiste el bloque de Infraestructura y Cloud y es innegable que en esto eres una *fucking machine*. Se aprecia que te lo has currado mucho y tu bloque está súper bien estructurado y pensado. Todas y cada una de las herramientas que nos has explicado nos aportan un valor incalculable. En serio, para alguien como yo, que lleva 18 años en un stack donde "infraestructura" significa reiniciar el Apache y rezar, abrir esas puertas y enseñar cómo y por dónde seguir profundizando es un regalo. Nos has dado el mapa; ahora nos toca a nosotros caminar.
+
+Por mencionar algo que mejorar, y lo digo con todo el cariño: eché de menos un flujo CI/CD real. Y no un deploy en Vercel, que eso a estas alturas es casi trivial, sino un pipeline de verdad, con opciones, regresiones y todo eso que en mi empresa se conoce como *cine de ciencia ficción* porque nosotros desplegamos en caliente, directamente a producción, y si rompe algo le echamos la culpa al servidor. Otra cuestión que quizás aportaría son más ejemplos de uso de la IA en tus clases. En otros módulos, los profesores se asistían con Claude Code u OpenCode en directo y como alumno ibas viendo prompts aplicados a la materia. En tu Master Class implementaste algo parecido a Perplexity en CLI, pero el código ya lo tenías preparado e ibas copiando, pegando y explicando. Y mira, no seré yo quien critique a alguien por copiar y pegar. En mi empresa lo elevamos a séptimo arte. Pero sí es cierto que viendo a alguien tan preparado como tú trabajar y asistirse de la IA en tiempo real aterrizas conceptos, vocabulario y ejemplos que a los que vemos el Cloud Computing como algo casi utópico e inalcanzable nos marcan el camino y hacen que perdamos un poco el miedo. Soy consciente de que esto no invalida nada de lo que has enseñado, pero por si acaso tiro la caña ahí para próximas ediciones.
+
+Dicho todo esto, no puedo evitar mencionar todo lo que aportas a la comunidad open source, como por ejemplo en el proyecto Genkit. Esto dice mucho de ti como persona.
+
+Muchas gracias por todo, Xavi.
